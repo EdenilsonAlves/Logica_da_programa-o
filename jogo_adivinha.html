@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {           //criei uma funçao para pular linha 
+
+        document.write("<br>");
+   		document.write("<br>");
+    }
+    
+
+    function mostra(frase) {    //criei uma função para imprimir na tela 
+
+    	document.write(frase);
+    	pulaLinha();
+    }
+                                                              
+   var numeroPensado = Math.round(Math.random() * 10);       //usei if e else como decisao no meu joguinho de acertar 
+   var tentativas = 1;
+   var chute = parseInt(prompt("Digite seu chute!"));        // parseInt tranforma string em numero o math.round arredonda os numeros .
+                                                              //o math.rondom pega o numero multiplicado e chama de forma aleatoria.
+
+    while(tentativas <= 3) {
+
+        var chute = parseInt(prompt("Digite seu chute!"));
+
+        if(chute == numeroPensado) {
+
+            mostra("Você ACERTOU, o número pensado era " + numeroPensado);
+            break;                                   //CASO ACERTAMOS O CHUTE O "BREAK" FAZ COM QUE PARE DE PERGUNTAR PARA O USUARIO .
+
+        } else {
+
+            mostra("Você ERROU!");
+        }
+
+        tentativas++;
+    }
+
+    mostra("FIM");
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+

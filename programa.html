@@ -1,0 +1,55 @@
+<Meta charset="UTF-8">
+
+<script>               // APREDENDO TRABALHAR COM VARIAVEL , APREDENDO A DECLARAR VARIAVEL E DAR NOME A UMA . 
+	
+	/*var ano = 2016;     //aqui estou passando uma variavel ano que recebe 2016
+	document.write("Flávio tem " + (ano - 1977) + "anos "); 
+	document.write("<br>")   //estou pulando linha usando <br>
+	document.write("Joaquim tem " + (ano - 1976) + " anos");  //estou concatenando 
+	document.write("<br>");
+
+
+	ano = 2017;  // como ja dei nome em uma variavel usando "var" aqui nao preciso colocar o "var novamente (só caso mudasse de nome)
+    document.write("Barney tem " + ( ano - 1976) + " anos"); 
+    document.write("<br>")
+
+    var idadeFlavio = 39;                    // aqui vou começar a melhorar a legibilidade do codigo e facilitar na manuntenção.
+    var idadeJoaquim = 20;
+    var idadeBarney = 41;
+     
+    var media = (idadeFlavio + idadeJoaquim + idadeBarney)/3;
+
+    document.write("A media das iades é " + Math.round(media));    // O math.round serve para arredondar o numero ex (33,46665) com ele 
+                                                                   // ficaria (33) colocar a variavel dentro do () nao passar por fora. 
+     var nome = "Flavio";
+
+     document.write("<br>");
+     document.write("A idade de " + nome + " é" + idadeFlavio);*/
+</script>    
+
+
+<script>
+   
+    function pulaLinha() {           //criei uma funçao para pular linha 
+
+        document.write("<br>");
+   		document.write("<br>");
+    }
+    
+
+    function mostra(mostra) {
+
+    	document.write(mostra);
+    	pulaLinha();
+    }
+
+    var ano = 2016;
+
+   document.write("Flávio tem " + (ano - 1977) + "anos ");
+   document.write("Joaquim tem " + (ano - 1976) + " anos"); 
+
+   ano = 2017
+   document.write("Barney tem " + ( ano - 1976) + " anos"); 
+
+ </script>
+
